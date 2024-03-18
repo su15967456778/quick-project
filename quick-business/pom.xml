@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>quick-common</artifactId>
+    <artifactId>quick-business</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>quick-common</name>
-    <description>quick-common</description>
+    <name>quick-business</name>
+    <description>quick-business</description>
     <properties>
         <java.version>19</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -54,7 +54,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.example.quickcommon.QuickCommonApplication</mainClass>
+                    <mainClass>com.example.quickbusiness.QuickBusinessApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
