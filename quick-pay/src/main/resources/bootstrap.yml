@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: quick-pay
+  config:
+    import: classpath:/bootstrap-common.yml

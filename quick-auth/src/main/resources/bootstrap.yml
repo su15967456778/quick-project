@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: quick-auth
+  config:
+    import: classpath:/bootstrap-common.yml

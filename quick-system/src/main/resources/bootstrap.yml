@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: quick-system
+  config:
+    import: classpath:/bootstrap-common.yml

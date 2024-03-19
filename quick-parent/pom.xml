@@ -13,10 +13,46 @@
     <version>${quick.version}</version>
     <name>quick-parent</name>
     <description>统一依赖管理 pom</description>
+    <packaging>pom</packaging>
     <properties>
         <java.version>21</java.version>
         <quick.version>0.0.1-SNAPSHOT</quick.version>
+        <hutool.version>5.8.22</hutool.version>
     </properties>
+
+
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+
+            </properties>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <quick.version>1.0.0.test-SNAPSHOT</quick.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>pre</id>
+            <properties>
+                <quick.version>1.0.0.pre-SNAPSHOT</quick.version>
+            </properties>
+        </profile>
+        <profile>
+            <id>prod</id>
+            <properties>
+                <quick.version>1.0.0.prod-SNAPSHOT</quick.version>
+            </properties>
+        </profile>
+    </profiles>
+
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -28,6 +64,14 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
