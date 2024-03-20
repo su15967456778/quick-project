@@ -18,6 +18,7 @@
         <java.version>21</java.version>
         <quick.version>0.0.1-SNAPSHOT</quick.version>
         <hutool.version>5.8.22</hutool.version>
+        <spring-boot.version>3.2.3</spring-boot.version>
     </properties>
 
 
@@ -56,18 +57,32 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <scope>test</scope>
+                <version>${spring-boot.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>quick-service-start</artifactId>
+                <version>${quick.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.example</groupId>
+                <artifactId>quick-common</artifactId>
+                <version>${quick.version}</version>
             </dependency>
 
         </dependencies>

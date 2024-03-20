@@ -1,5 +1,6 @@
 package com.example.quicksystem;
 
+import com.example.quickcommon.demos.TestClass;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
