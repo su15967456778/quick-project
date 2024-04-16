@@ -19,6 +19,7 @@
         <quick.version>0.0.1-SNAPSHOT</quick.version>
         <hutool.version>5.8.22</hutool.version>
         <spring-boot.version>3.2.3</spring-boot.version>
+        <spring-boot.security.version>1.0.2</spring-boot.security.version>
     </properties>
 
 
@@ -54,6 +55,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-oauth2-authorization-server</artifactId>
+                <version>${spring-boot.security.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
