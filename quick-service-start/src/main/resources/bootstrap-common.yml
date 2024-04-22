@@ -1,21 +1,32 @@
-# dev/test/pre addr
-#nacos.non.prod.addr: 127.0.0.1:8848
-#
-## local addr
-#nacos.local.addr: 127.0.0.1:8848
-#
-## prod addr
-#nacos.prod.addr: 127.0.0.1:8848
-#
-#
-#spring:
-#  cloud:
-#    nacos:
-#      config:
-#        extension-configs:
-#          - data-id: quick-global.yml
-#            group: ${spring.config.activate.on-profile}
-#          - data-id: ${spring.application.name}-application-${spring.config.activate.on-profile}.yml
-#            refresh: true
-#            group: ${spring.config.activate.on-profile}
-#
+nacos.non.prod.addr: 127.0.0.1:8848
+
+# local addr
+nacos.local.addr: 127.0.0.1:8848
+
+# prod addr
+nacos.prod.addr: 127.0.0.1:8848
+
+
+spring:
+  cloud:
+    nacos:
+      config:
+        extension-configs:
+          - data-id: quick-global.yml
+            group: ${spring.config.activate.on-profile}
+          - data-id: ${spring.application.name}-application-${spring.config.activate.on-profile}.yml
+            refresh: true
+            group: ${spring.config.activate.on-profile}
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  cloud:
+    nacos:
+      config:
+        server-addr: ${nacos.local.addr}
+        namespace: 5c9a09c7-8a68-45eb-b335-15e7f17f9557
+      discovery:
+        server-addr: ${nacos.local.addr}
+        namespace: 5c9a09c7-8a68-45eb-b335-15e7f17f9557

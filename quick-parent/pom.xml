@@ -21,6 +21,8 @@
         <spring-boot.version>3.2.3</spring-boot.version>
         <spring-boot.security.version>1.0.2</spring-boot.security.version>
         <gateway.version>4.1.0</gateway.version>
+        <spring.cloud.version.revision>2023.0.0.0-RC1</spring.cloud.version.revision>
+        <spring.cloud.starter.version>4.0.4</spring.cloud.starter.version>
     </properties>
 
 
@@ -62,13 +64,28 @@
                 <artifactId>spring-cloud-starter-gateway</artifactId>
                 <version>${gateway.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-bootstrap</artifactId>
+                <version>${spring.cloud.starter.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-oauth2-authorization-server</artifactId>
                 <version>${spring-boot.security.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>${spring.cloud.version.revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${spring.cloud.version.revision}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>

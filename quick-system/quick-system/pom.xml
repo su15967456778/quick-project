@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <parent>
         <groupId>com.example</groupId>
         <artifactId>quick-parent</artifactId>
@@ -9,16 +10,16 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
-    <artifactId>quick-pay</artifactId>
+    <artifactId>quick-system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>quick-pay</name>
-    <description>quick-pay</description>
+    <name>quick-system</name>
+    <description>quick-system</description>
 
 
     <modules>
-        <module>quick-pay-server</module>
-        <module>quick-pay-feign</module>
+        <module>quick-system-feign</module>
+        <module>quick-system-server</module>
     </modules>
 
 
