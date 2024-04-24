@@ -1,6 +1,5 @@
 package com.example.quickbusiness;
 
-import com.example.quickcommon.demos.TestClass;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
