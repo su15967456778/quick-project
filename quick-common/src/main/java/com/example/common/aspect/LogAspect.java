@@ -18,7 +18,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @Component
 public class LogAspect {
 
-    @Pointcut("(execution(public * com.example.*.controller..*.*(..)) || @annotation(com.example.common.aspect.MethodLog)) && !@annotation(com.example.common.aspect.NotMethodLog))")
+    @Pointcut("(execution(public * com.example.controller..*.*(..)) || @annotation(com.example.common.aspect.MethodLog)) && !@annotation(com.example.common.aspect.NotMethodLog))")
     public void controllerMethod() {
     }
 
