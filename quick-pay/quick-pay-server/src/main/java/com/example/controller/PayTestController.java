@@ -7,6 +7,8 @@ import com.example.client.SystemClient;
 import com.example.common.aspect.MethodLog;
 import com.example.common.base.ResultVO;
 import com.example.common.utils.ResultUtils;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/pay")
 @Slf4j
+@Tag(name="测试swagger")
 public class PayTestController {
+    @Operation(summary = "测试方法")
     @GetMapping("/test/method")
     public ResultVO<String> testMethod() {
         return ResultUtils.success("支付服务测试返回成功！");

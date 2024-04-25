@@ -23,6 +23,8 @@
         <gateway.version>4.1.0</gateway.version>
         <spring.cloud.version.revision>2023.0.0.0-RC1</spring.cloud.version.revision>
         <spring.cloud.starter.version>4.1.0</spring.cloud.starter.version>
+        <knife4j.version>4.3.0</knife4j.version>
+        <fasejson.version>2.0.21</fasejson.version>
     </properties>
 
 
@@ -72,6 +74,21 @@
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-bootstrap</artifactId>
                 <version>${spring.cloud.starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fasejson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi3-jakarta-spring-boot-starter</artifactId>
+                <version>${knife4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
