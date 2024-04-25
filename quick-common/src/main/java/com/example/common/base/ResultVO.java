@@ -1,6 +1,6 @@
-package com.example.quickcommon.base;
+package com.example.common.base;
 
-import com.example.quickcommon.enums.ResultEnum;
+import com.example.common.enums.ResultEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

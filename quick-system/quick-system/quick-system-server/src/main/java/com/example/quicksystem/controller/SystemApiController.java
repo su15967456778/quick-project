@@ -1,8 +1,8 @@
 package com.example.quicksystem.controller;
 
 import com.example.client.SystemClient;
-import com.example.quickcommon.base.ResultVO;
-import com.example.quickcommon.utils.ResultUtils;
+import com.example.common.base.ResultVO;
+import com.example.common.utils.ResultUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

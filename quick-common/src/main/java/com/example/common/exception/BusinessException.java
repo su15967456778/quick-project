@@ -1,7 +1,7 @@
-package com.example.quickcommon.exception;
+package com.example.common.exception;
 
 
-import com.example.quickcommon.enums.ResultEnum;
+import com.example.common.enums.ResultEnum;
 
 public class BusinessException extends RuntimeException {
 

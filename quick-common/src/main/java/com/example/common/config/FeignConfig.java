@@ -1,4 +1,4 @@
-package com.example.quickcommon.config;
+package com.example.common.config;
 
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Configuration;

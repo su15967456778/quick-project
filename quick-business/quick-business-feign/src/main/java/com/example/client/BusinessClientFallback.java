@@ -1,8 +1,8 @@
 package com.example.client;
 
-import com.example.quickcommon.base.ResultVO;
-import com.example.quickcommon.enums.ResultEnum;
-import com.example.quickcommon.exception.BusinessException;
+import com.example.common.base.ResultVO;
+import com.example.common.enums.ResultEnum;
+import com.example.common.exception.BusinessException;
 
 public class BusinessClientFallback implements BusinessClient {
 

@@ -1,4 +1,4 @@
-package com.example.quickcommon.constant;
+package com.example.common.constant;
 
 public interface LogConst {
 

@@ -1,8 +1,8 @@
-package com.example.quickcommon.utils;
+package com.example.common.utils;
 
 
-import com.example.quickcommon.base.ResultVO;
-import com.example.quickcommon.enums.ResultEnum;
+import com.example.common.base.ResultVO;
+import com.example.common.enums.ResultEnum;
 
 public class ResultUtils {
 

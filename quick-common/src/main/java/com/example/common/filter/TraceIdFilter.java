@@ -1,7 +1,7 @@
-package com.example.quickcommon.filter;
+package com.example.common.filter;
 
 import cn.hutool.core.util.IdUtil;
-import com.example.quickcommon.constant.LogConst;
+import com.example.common.constant.LogConst;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebFilter;
