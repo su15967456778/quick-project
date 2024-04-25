@@ -1,4 +1,4 @@
-package com.example.quickpay;
+package com.example;
 
 import com.example.client.BusinessClient;
 import org.springframework.boot.SpringApplication;
