@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class PayTestController {
     @GetMapping("/test/method")
     public ResultVO<String> testMethod() {
-        log.info("666");
-        return ResultUtils.success("支付服务返回成功！");
+        return ResultUtils.success("支付服务测试返回成功！");
     }
 }
