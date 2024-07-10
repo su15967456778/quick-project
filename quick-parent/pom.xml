@@ -25,6 +25,8 @@
         <spring.cloud.starter.version>4.1.0</spring.cloud.starter.version>
         <knife4j.version>4.3.0</knife4j.version>
         <fasejson.version>2.0.21</fasejson.version>
+        <mybatisplus.version>3.5.7</mybatisplus.version>
+        <caffine.version>2.8.0</caffine.version>
     </properties>
 
 
@@ -146,6 +148,16 @@
                 <version>${quick.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatisplus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>${caffine.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>quick-system-feign</artifactId>
                 <version>${quick.version}</version>
@@ -167,6 +179,8 @@
                 <artifactId>quick-common</artifactId>
                 <version>${quick.version}</version>
             </dependency>
+
+
 
         </dependencies>
 
